@@ -1,0 +1,45 @@
+name: flipnova
+description: "FLIPNOVA - Multitool for enthusiasts"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_blue_plus: ^2.3.10
+  shared_preferences: ^2.2.3
+  dart_ping: ^10.0.1
+  dart_ipify: ^1.1.1
+  crypto: ^3.0.6
+  qr_flutter: ^4.1.0
+  permission_handler: ^11.3.1
+  pointycastle: ^3.9.1
+  connectivity_plus: ^6.1.0
+  path_provider: ^2.1.4
+  google_fonts: ^6.2.1
+  collection: ^1.18.0
+  multicast_dns: ^0.3.0
+  file_selector: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.12.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/chameleon_uuids.json
+
+flutter_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon.png"
+
+# To generate launcher icons, add `flutter_launcher_icons` config and run the
+# `flutter pub run flutter_launcher_icons:main` command. Disabled here because
+# `assets/icon.png` is missing.
